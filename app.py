@@ -45,8 +45,8 @@ os.environ["OPENAI_BASE_URL"] = OPENAI_API_BASE
 # ── LLMs ─────────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_llms():
-    llm          = ChatOpenAI(model_name="gpt-4o")
-    evaluate_llm = ChatOpenAI(model_name="gpt-4o")
+    llm          = ChatOpenAI(model_name="gpt-4o-mini")
+    evaluate_llm = ChatOpenAI(model_name="gpt-4o-mini")
     return llm, evaluate_llm
 
 llm, evaluate_llm = load_llms()
